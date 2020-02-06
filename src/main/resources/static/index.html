@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Narnia</title>
+
+    <!-- Fonts    -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Pacifico&display=swap" rel="stylesheet">
+
+    <!-- CSS Stylesheets    -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- JQuery -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<body>
+
+<div class="container-fluid title">Welcome to Narnia!</div>
+
+<div class="dataTables mx-auto my-5">
+    <table id="visitorTable" class="display mx-auto">
+    </table>
+
+    <div><button id="fetchVisitorTable" class="btn btn-outline-primary mt-4">Refresh visitor data</button></div>
+
+
+
+    <button id="enterNarnia" class="btn btn-success mt-4 mx-1">Enter Narnia.</button>
+    <button id="exitNarnia" class="btn btn-danger mt-4 mx-1">Leave Narnia.</button>
+    <div>Current visitors in Narnia:</div>
+    <table id="narniaTable" class="display mx-auto">
+    </table>
+
+    <button id="fetchNarniaTable" class="btn btn-outline-primary mt-4">Refresh Narnia data</button>
+
+</div>
+
+
+
+
+
+
+<!-- FOOTER -->
+<div class="container-fluid footer">
+    <div class="row ">
+        <div class="d-flex col-12 justify-content-center "><small>© Copyright Chantal Schot - Software Engineering Track - Foundation (February 2020)</small></div>
+    </div>
+</div>
+
+<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.20/datatables.min.js"></script>
+<script src="/js/index.js" charset="utf-8"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #ffeadb;
+    text-align: center;
+    padding: 0;
+    color: #678a74;
+}
+
+.dataTables {
+    width: 50vw;
+}
+
+.display {
+    text-align: center;
+}
+
+
+/* Rotate title in top left corner (from stackoverflow)*/
+.outer-title {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+}
+.inner-title {
+    font-family: 'Pacifico', sans-serif;
+    text-align: left;
+    color: #ffbaba;
+    font-size: 5rem;
+    position: absolute;
+    bottom: 100%;
+    -webkit-transform: rotateZ(90deg);
+    transform-origin: 0 100%;
+    white-space: nowrap;;
+}
+.rotate {
+    -webkit-transform: rotate(180deg);
+}
+ul { list-style: none; padding: 0; margin: 0; white-space: nowrap; }
+ul li { padding: 5px 10px; }
+
+h3 {
+
+    font-family: 'Pacifico', sans-serif;
+    font-size: 2.5rem;
+    color: #f7c5a8;
+}
+
