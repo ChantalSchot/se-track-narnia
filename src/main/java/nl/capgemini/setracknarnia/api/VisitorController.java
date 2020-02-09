@@ -78,7 +78,7 @@ public class VisitorController {
 
 	// Returning a Singleton will allow result to print (to string). Otherwise a callback function should have been made inside JQuery ajax.
 	@PutMapping(value = "narnia/exit", consumes = "application/json", produces = "application/json")
-	public Set exitCloset(@RequestBody Visitor exitVisitor) {
+	public ResponseEntity<?> exitCloset(@RequestBody Visitor exitVisitor) {
 		Visitor visitor = this.visitorRepository.findById(exitVisitor.getId()).get();
 
 		// Check whether visitor is inside Narnia before exiting:
@@ -86,10 +86,10 @@ public class VisitorController {
 			visitor.setInNarnia(false);
 			updateVisitor(visitor);
 			String message = visitor.getFirstName() + " has left Narnia. I hope they had a good time!";
-			return Collections.singleton(message);
+			return ResponseEntity.ok(Collections.singleton(message));
 		} else {
 			String message = visitor.getFirstName() + " is not in Narnia right now, so he cannot leave...";
-			return Collections.singleton(message);
+			return ResponseEntity.ok(Collections.singleton(message));
 		}
 	}
 
